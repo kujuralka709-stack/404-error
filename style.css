@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f5e8ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 50px 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.number {
+    font-size: 130px;
+    font-weight: bold;
+    color: #5b5bd6;
+}
+
+.planet {
+    width: 105px;
+    height: 105px;
+    background: #ffbd59;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.eyes {
+    display: flex;
+    gap: 18px;
+    position: absolute;
+    top: 35px;
+}
+
+.eyes span {
+    height: 12px;
+    width: 12px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.mouth {
+    width: 25px;
+    height: 12px;
+    border-bottom: 3px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 55px;
+}
+
+h1 {
+    color: #25255e;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    display: inline-block;
+    background: #5b5bd6;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #3838a5;
+    transform: translateY(-3px);
+}
+
+.footer {
+    margin-top: 30px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 35px 18px;
+    }
+
+    .number {
+        font-size: 85px;
+    }
+
+    .planet {
+        width: 75px;
+        height: 75px;
+    }
+
+    .eyes {
+        top: 24px;
+    }
+
+    .mouth {
+        top: 43px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
